@@ -435,6 +435,51 @@ footer {
     background-color: #2F303A;
 }
 
+.container-footer {
+    display: flex;
+}
+
+.add {
+    margin-left: 70px;
+    margin-top: 12px;
+}
+
+.add h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+
+.add-icon {
+    display: flex;
+    padding: 0;
+}
+
+.add-icon .icon {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.add-icon .icon:first-child {
+    margin-left: 0;
+}
+
+.add-icon .icon:hover,
+.add-icon .icon:focus {
+    background-color: #2196F3;
+    cursor: pointer;
+}
+
 .address-footer {
     display: flex;
     flex-direction: column;
@@ -447,3 +492,4 @@ footer {
     margin-top: 9px;
     color: rgba(255, 255, 255, 0.6);
 }
+
