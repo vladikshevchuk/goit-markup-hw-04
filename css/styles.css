@@ -140,6 +140,10 @@ h2, h3, p {
 .hero {
     height: 600px;
     text-align: center;
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+            url(../images/bg-img.jpg);
     background-color: #2F303A;
     color: #FFFFFF;
 }
@@ -167,6 +171,7 @@ h2, h3, p {
     border-radius: 6px;
     padding: 10px 22px;
     min-width: 200px;
+    border: none;
 
     background-color: #2196f3;
     color: #FFFFFF;
@@ -200,6 +205,32 @@ h2, h3, p {
 
 .about-us .item + .item {
     margin-left: 30px;
+}
+
+.about-us > .item::before {
+    display: block;
+    content: '';
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+}
+
+.about-us .icon-antenna::before {
+    background-image: url(../images/antenna.svg);
+}
+
+.about-us .icon-clock::before {
+    background-image: url(../images/clock.svg);
+}
+
+.about-us .icon-diagram::before {
+    background-image: url(../images/diagram.svg);
+}
+
+.about-us .icon-astronaut::before {
+    background-image: url(../images/astronaut.svg);
 }
 
 .what-we-do {
