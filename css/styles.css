@@ -123,18 +123,43 @@ h2, h3, p {
 
 .contacts {
     margin-left: auto;
+    color: #757575;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
 }
 
-.contacts .link + .link {
-    margin-left: 30px;
+.link-adress:hover {
+    color: #2196F3;
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus,
 .contacts .link:hover,
 .contacts .link:focus {
-    color: #2196f3;
+    color: #2196f3 !important;
+    /* fill: #2196F3; */
 }
+
+.envelope {
+    margin-right: 10px;
+    fill: #757575;}
+
+
+.contacts .link + .link {
+    margin-left: 30px;
+}
+
+/* .site-nav .link .envelope:hover,
+.site-nav .link .envelope:focus {
+    fill: #2196f3;
+} */
+
+
+
 
 /* hero */
 .hero {
@@ -145,6 +170,7 @@ h2, h3, p {
             rgba(47, 48, 58, 0.4)),
             url(../images/bg-img.jpg);
     background-color: #2F303A;
+    background-repeat: no-repeat;
     color: #FFFFFF;
 }
 
@@ -207,30 +233,20 @@ h2, h3, p {
     margin-left: 30px;
 }
 
-.about-us > .item::before {
-    display: block;
-    content: '';
-    height: 120px;
-    background-repeat: no-repeat;
-    background-position: center;
+.icon-antenna {
     background-color: #F5F4FA;
+    width: 270px;
+    height: 120px;
     border-radius: 4px;
 }
 
-.about-us .icon-antenna::before {
-    background-image: url(../images/antenna.svg);
+.icon-antenna .icon-us {
+    margin-left: 100px;
+    margin-top: 25px;
 }
 
-.about-us .icon-clock::before {
-    background-image: url(../images/clock.svg);
-}
-
-.about-us .icon-diagram::before {
-    background-image: url(../images/diagram.svg);
-}
-
-.about-us .icon-astronaut::before {
-    background-image: url(../images/astronaut.svg);
+.title-us {
+    visibility: hidden;
 }
 
 .what-we-do {
@@ -349,6 +365,7 @@ h2, h3, p {
 .button-portfolio:focus {
     background-color: #2196f3;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 .our-team {
@@ -377,9 +394,9 @@ h2, h3, p {
 
 .portfolio .item {
     width: 370px;
-
     margin-right: 30px;
     margin-bottom: 30px;
+    outline: 1px solid #EEEEEE;
 }
 
 .portfolio .item:nth-child(3n) {
@@ -389,6 +406,7 @@ h2, h3, p {
 .portfolio .item:nth-last-child(-n + 3) {
     margin-bottom: 0;
 }
+
 
 /* .portfolio .item { */
     /* width: calc((100%) / 3); */
@@ -401,6 +419,7 @@ h2, h3, p {
 
 .title-portfolio {
     padding-top: 20px;
+    padding-left: 24px;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -416,6 +435,8 @@ h2, h3, p {
 
 .portfolio p {
     padding-top: 4px;
+    padding-left: 24px;
+    padding-bottom: 20px;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -449,7 +470,7 @@ footer {
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 22px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     
@@ -459,23 +480,44 @@ footer {
 .add-icon {
     display: flex;
     padding: 0;
+    margin-top: 20px;
 }
 
-.add-icon .icon {
+/* .add-icon .icon {
+    width: 44px;
+    height: 44px;
+} */
+
+/* .add-icon .icon {
     background-color: rgba(255, 255, 255, 0.1);
     width: 44px;
     height: 44px;
     padding: 12px;
     border-radius: 50%;
-    margin-left: 10px;
-}
+    margin-left: 10px; */
+/* } */
 
-.add-icon .icon:first-child {
+/* .add-icon .icon:first-child {
     margin-left: 0;
+} */
+
+.add .button {
+    margin-right: 10px;
+    padding: 0;
+    border: 0;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
-.add-icon .icon:hover,
-.add-icon .icon:focus {
+/* .add .button:first-child {
+    margin-left: 0;
+} */
+
+.add .button:hover,
+.add .button:focus {
     background-color: #2196F3;
     cursor: pointer;
 }
