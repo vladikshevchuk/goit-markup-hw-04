@@ -4,18 +4,9 @@
 /* цвет лого - #000000 и #2196F3 */
 /* цвет текста хиро и футер - #FFFFFF */
 
-:root {
-  --primary-text-color: #757575;
-  --title-text-color: #212121;
-  --accent-color: #2196f3;
-  --logo-black: #000000;
-  --logo-white: #ffffff;
-  --primary-bg-color: #ffffff;
-}
-
 body {
   background-color: var(--primary-bg-color);
-  color: var(--primary-text-color);
+  color: #212121;
 }
 
 ul {
@@ -52,6 +43,10 @@ p {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+header {
+    border-bottom: 1px solid #ECECEC;
 }
 
 .main-nav {
@@ -112,7 +107,7 @@ p {
   padding-top: 32px;
   padding-bottom: 32px;
 
-  color: var(--primary-text-color);
+  color: #212121;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -123,7 +118,9 @@ p {
 
 /* contacts */
 .contacts a {
-  color: var(--primary-text-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: #757575;
 }
 
 .contacts {
@@ -142,7 +139,6 @@ p {
 .contacts .link:hover,
 .contacts .link:focus {
   color: #2196f3 !important;
-  /* fill: #2196F3; */
 }
 
 .envelope {
@@ -357,7 +353,7 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.team-contacts {
+/* .team-contacts {
   margin-left: 32px;
   margin-top: 16px;
   margin-bottom: 30px;
@@ -372,9 +368,9 @@ p {
   padding: 12px;
   border-radius: 50%;
   background-color: rgb(255, 255, 255);
-}
+} */
 
-.team-contacts .button-icon {
+/* .team-contacts .button-icon {
   fill: #afb1b8;
 }
 
@@ -388,7 +384,7 @@ p {
 .team-contacts .button-icon:focus {
   fill: #fff;
   cursor: pointer;
-}
+} */
 
 /* button portfolio */
 
@@ -493,6 +489,34 @@ p {
   color: #757575;
 }
 
+/* Наша команда соц сети*/
+.social .link-icon {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  margin-right: 10px;
+  color: #AFB1B8;
+}
+
+.social .link-icon:hover,
+.social .link-icon:focus {
+    background-color: #2196F3;
+    color: #ffffff;
+}
+
+.social {
+  display: flex;
+  margin-top: 20px;
+  padding-left: 32px;
+  margin-bottom: 30px;
+}
+
+.social .social-icon {
+  margin: auto;
+  fill: currentColor;
+}
+
 /* Постоянные клиенты */
 .company-box {
   display: flex;
@@ -502,9 +526,8 @@ p {
 }
 
 .company-box li {
-    width: 170px;
-    margin-right: 30px;
-
+  width: 170px;
+  margin-right: 30px;
 }
 .company-logo {
   fill: currentColor;
