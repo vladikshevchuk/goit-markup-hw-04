@@ -298,6 +298,18 @@ header {
   letter-spacing: 0.03em;
 }
 
+.about-us .title-hhh {
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    
+        color: #212121;
+}
+
 .p-main {
   padding-top: 10px;
 
@@ -390,6 +402,7 @@ header {
 
 .button-portfolio {
   border-radius: 4px;
+  border: 0;
   padding: 6px 22px;
   min-width: 73px;
   text-align: center;
